@@ -1,0 +1,5 @@
+<h1>Student</h1>
+<%= @student.name %> </br>
+<% @student.addresses.each do |address| %>
+	<%= address.number %>- <%= address.street %>, <%= address.city %>, <%= address.zip_code %> </br>
+<% end %>
